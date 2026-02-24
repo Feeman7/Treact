@@ -295,6 +295,15 @@ TESTIMONIALS ↓
     margin: 16px 0 0;
 }
 
+.testimonial__bottom {
+    display: flex;
+    flex-direction: column;
+    color: #243E63;
+    font: 16px;
+    padding: 4px 0px 0px;
+    box-sizing: border-box;
+}
+
 .testimonial__para {
     color: rgb(74, 85, 104);
     font-size: 16px;
@@ -309,6 +318,13 @@ TESTIMONIALS ↓
     align-items: center;
 }
 
+.testimonial__profile--img {
+    height: 60px;
+    width: 60px;
+    border-radius: 9999px;
+    margin-right: 12px;
+}
+
 .testimonial__name {
     font-size: 20px;
 color: #4A5568;
@@ -318,6 +334,24 @@ color: #4A5568;
 color: #7C8BA1;
 font-size: 16px;
 }
+
+.testimonial__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.testimonial__button {
+   color: #243E63;
+   font: 13.3333px;
+   background: #EDF2F7;
+   margin: 0px 12px;
+   padding: 16px;
+   border: none;
+   border-radius: 9999px;
+   cursor: pointer;
+}
+
 START / CALL TO ACTION ↓
 
 */
