@@ -41,6 +41,17 @@ main {
     margin-bottom: 96px;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.section__para {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124, 139, 161);
+}
 
 /* 
 
@@ -269,11 +280,44 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
+    margin-top: 40px;
 }
 
+.testimonial__rating {
+    color: rgb(246, 173, 85);
+    font: 16px;
+    margin: 4px, 2px, 0, 0;
+}
 
-/* 
+.testimonial__title {
+    color: #4A5568;
+    font: 20px;
+    margin: 16px 0 0;
+}
 
+.testimonial__para {
+    color: rgb(74, 85, 104);
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__name {
+    font-size: 20px;
+color: #4A5568;
+}
+
+.testimonial__role {
+color: #7C8BA1;
+font-size: 16px;
+}
 START / CALL TO ACTION ↓
 
 */
@@ -299,6 +343,50 @@ footer {
     margin-bottom: -32px;
     position: relative;
     overflow: hidden;
+}
+
+* {
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+    color: rgb(36,62,99);
+    padding: 0px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__columns {
+display: flex;
+  margin-top: -48px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.footer__column {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__column--title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer__column--link {
+    color: #f7fafc;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 4px 0;
 }
 
 
@@ -354,5 +442,9 @@ MOBILE RESPONSIVENESS ↓
     }
     main {
         margin-bottom: 80px;
+    }
+
+    .footer__columns {
+        justify-content: center;
     }
 }
