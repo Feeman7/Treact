@@ -301,11 +301,13 @@ FEATURES ↓
 
 
 .features {
- display: flex;
-flex-wrap: wrap;
-box-sizing: border-box;
-margin-top: 40px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 48px;
+}   
 
 .feature__row {
     display: flex;
