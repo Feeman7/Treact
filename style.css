@@ -195,7 +195,7 @@ HEADER / ABOUT US ↓
 */
 
 
-header .row {
+.header__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -289,11 +289,11 @@ align-items: center;
 
 .header__img {
     margin-top: 48px;
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
-.img__container {
+.header__img--wrapper {
 margin-top: 48px;
 width: 100%;
 max-width: 512px;
