@@ -471,11 +471,14 @@ align-items: center;
 
 .quality__grid {
     transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
-    width: 40%;
-    height: 40%;
+    width: 80px;
+    height: 80px;
     position: absolute;
+    right: 0px;
+    bottom: 0px;
     fill: rgb(100, 21, 255);
-    color: rgb(100, 21, 255);
+    color: rgb(100, 21, 255, var(--tw-text-opacity__));
+    z-index: 0;
     display: block;
 }
 
