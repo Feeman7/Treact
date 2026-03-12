@@ -522,6 +522,7 @@ STEPS ↓
 }
 
 .steps__tag {
+    text-align: left;
     font-size: 16px;
     color: #6415ff;
     letter-spacing: 1.6px;
@@ -564,6 +565,7 @@ margin-top: 32px;
 }
 
 .step__title {
+    text-align: left;
     font-weight: 600;
     font-size: 20px;
     color: #243e63;
@@ -571,6 +573,7 @@ margin-top: 32px;
 }
 
 .step__para {
+    text-align: left;
     font-size: 14px;
     color: #718096;
     margin-top: 12px;
@@ -586,8 +589,13 @@ VALUES ↓
 
 #values .row {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.fa-solid.fa-suitcase {
+    border-radius: 50;
 }
 
 
@@ -701,7 +709,7 @@ font-size: 16px;
 }
 
 .testimonial__button {
-   color: #243E63;
+   color: #6415ff;
    font: 13.3333px;
    background: #EDF2F7;
    margin: 0px 12px;
@@ -755,7 +763,7 @@ footer {
 .footer__column {
     margin-top: 48px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     z-index: 2;
 }
