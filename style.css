@@ -797,6 +797,65 @@ footer {
     text-decoration: none;
 }
 
+.footer__divider {
+   margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-top: 1px solid rgb(116, 44, 255, var(--tw-border-opacity__));
+    width: 100%;
+    border-bottom-width: 2px;
+    --tw-border-opacity__: 1;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.footer__logo--img {
+    height: 40px;
+    width: 40px;
+    box-sizing:border-box;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.footer__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
+    color: #fff;
+}
+
+.footer__copyright {
+    color: rgb(203, 213, 224);
+    font-size: 14px;
+    line-height: 1.625;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__social--link {
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 9999px;
+    --tw-bg-opacity__: 1;
+    background-color: rgb(247, 250, 252, var(--tw-bg-opacity__));
+    padding: .5rem;
+    --tw-text-opacity__: 1;
+    color: rgb(26, 32, 44, var(--tw-text-opacity__));
+}
+
 /* 
 
 MOBILE RESPONSIVENESS ↓
