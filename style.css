@@ -636,6 +636,11 @@ VALUES ↓
     padding-bottom: 0;
 }
 
+.values__title--img {
+    display: flex;
+    flex-direction: column;
+}
+
 .values__para {
     margin-top: 12px;
     line-height: 2;
@@ -657,7 +662,6 @@ VALUES ↓
     background-color: rgb(254 178 178);
     padding: 0.5rem;
     border-radius: 9999px;
-    text-align: center;
     font-size:32px;
 }
 
