@@ -740,8 +740,7 @@ PRICING ↓
 }
 
 .threeplans__container {
-    display: block;
-    box-sizing:border-box;
+    display: flex;
     flex-direction: row;
     border-width: 0px;
     border-style: solid;
@@ -817,7 +816,6 @@ PRICING ↓
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 005em;
-    box-sizing: border-box;
     border-width: 0px;
     border-style: solid;
     border-color: rgb(226, 232, 240);
@@ -833,9 +831,9 @@ PRICING ↓
 .business__plan {
     position: relative;
     margin-top: 4rem;
-    display: flex;
     width: 100%;
     max-width: 24rem;
+    display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
     padding-left: 2rem;
