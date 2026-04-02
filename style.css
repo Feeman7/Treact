@@ -740,6 +740,7 @@ PRICING ↓
 }
 
 .threeplans__container {
+    align-items: stretch;
     display: flex;
     flex-direction: row;
     padding: 64px 0;
@@ -785,6 +786,8 @@ PRICING ↓
 }
 
 .threeplans__features {
+    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
     border-top-width: 2px;
@@ -797,6 +800,8 @@ PRICING ↓
 }
 
 .main__feature {
+    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 0px;
@@ -807,17 +812,21 @@ PRICING ↓
 }
 
 .feature {
+    width: 100%;
+     align-items: center;
+     text-align: center;
     color: rgb(113, 128, 150);
     margin-top: 1.25rem;
     font-weight: 500;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .threeplans__button--personal {
     width: 100%;
     border-radius: 9999px;
     border-style: hidden;
+    cursor:pointer;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-weight:700;
@@ -827,13 +836,14 @@ PRICING ↓
 }
 
 .personal__plan {
+    width: 100%;
     align-items: center;
     text-align: center;
 }
 
 .business__plan {
     width: 100%;
-    max-width: 24rem;
+    align-items: center;
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
@@ -843,6 +853,18 @@ PRICING ↓
     text-align: center;
     color: white;
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.enterprise__plan {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
 }
 
 .business__header {
@@ -882,6 +904,9 @@ PRICING ↓
 }
 
 .business__features {
+    width: 100%;
+    align-items: center;
+     border-color: rgb(229, 231, 235);
     display: flex;
     flex-direction: column;
     border-top-width: 2px;
@@ -894,6 +919,8 @@ PRICING ↓
 }
 
 .business__main--feature {
+    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 0px;
@@ -905,20 +932,23 @@ PRICING ↓
 }
 
 .business__feature {
+    width: 100%;
+    align-items: center;
     color: rgb(255, 255, 255);
     margin-top: 1.25rem;
     font-weight: 500;
     display: flex;
-    align-items: center;
     text-align: center;
 }
 
 .threeplans__button--business {
     width: 100%;
+    align-items: center;
     color: rgb(100, 21, 255);
     border-radius: 9999px;
     border-style: hidden;
     padding-top: 1rem;
+    cursor: pointer;
     padding-bottom: 1rem;
     font-weight:700;
     text-transform: uppercase;
@@ -928,10 +958,12 @@ PRICING ↓
 .threeplans__button--enterprise {
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     width: 100%;
+    align-items: center;
     border-radius: 9999px;
     border-style: hidden;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    cursor: pointer;
     font-weight:700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
