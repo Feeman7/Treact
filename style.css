@@ -1264,22 +1264,27 @@ footer {
   padding: 10px;
 }
 
-.footer__column--link {
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  line-height: 1.625;
-  font-weight: 500;
-  margin-bottom: 12px;
-  transition: all 300ms ease;
-  text-decoration: none;
-  cursor: pointer;
+.footer__column--link::after {
+content:"";
+width: 100%;
+height: 2px;
+background: white;
+position: absolute;
+left: 0;
+bottom: 0;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.footer__column--link:hover {
-  text-decoration: underline;
-  transition: all 300ms ease;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+.footer__column--link:hover::after {
+opacity: 1;
+visibility: visible;
+}
+
+.footer__column--link {
+    transition: all ease-in-out 0.3s;
+    position: relative;
 }
 
 .footer__divider {
