@@ -1085,6 +1085,8 @@ TESTIMONIALS ↓
   cursor: pointer;
 }
 
+
+
 /*
 
 START / CALL TO ACTION ↓
@@ -1283,8 +1285,10 @@ visibility: visible;
 }
 
 .footer__column--link {
-    transition: all ease-in-out 0.3s;
-    position: relative;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  color: white;
+  text-decoration: none;
 }
 
 .footer__divider {
