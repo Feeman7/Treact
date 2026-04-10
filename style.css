@@ -74,7 +74,14 @@ nav {
   align-items: center;
   margin: 8px 0;
   padding-bottom: 4px;
+  cursor: pointer;
 }
+
+.nav__logo:hover .nav__logo--title {
+  color: #6415ff;
+  transition: all 300ms ease;
+}
+
 .nav__logo--img {
   height: 40px;
   width: 40px;
@@ -100,14 +107,22 @@ nav {
   border-bottom: 2px solid transparent;
   position: relative;
   transition: all 300ms;
+  text-decoration: none;
   margin: 0 24px;
   cursor: pointer;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  color: #6415ff;
+  transition: all 300ms ease;
 }
 
 .nav__link--primary {
   margin: 0;
   padding: 10px 32px;
   margin-top: 2px;
+  text-decoration: none;
   border-radius: 9999px;
   color: #fff;
   background-color: #6415ff;
@@ -117,16 +132,17 @@ nav {
   transition: all 300ms ease;
 }
 
+.nav__link--primary:hover {
+  background-color: rgb(54, 7, 173);
+  color: white;
+  transition: all 300ms ease;
+}
+
 .btn__menu {
   display: none;
   background: transparent;
   border: none;
   transition: all 300ms ease;
-}
-
-.btn__menu--svg:hover {
-  filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
-    brightness(94%) contrast(115%);
 }
 
 .modal {
@@ -263,6 +279,12 @@ HEADER / ABOUT US ↓
   border-radius: 9999px;
   font-size: 16px;
   font-weight: 500;
+  transition: all 300ms ease;
+}
+
+.header__email--btn:hover {
+  background-color: rgb(54, 7, 173);
+  color: white;
   transition: all 300ms ease;
 }
 
@@ -463,10 +485,17 @@ QUALITY WORK ↓
   font-size: 14px;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
   font-weight: bold;
   transition: all 300ms ease;
   cursor: pointer;
   margin-top: 24px;
+}
+
+.quality__btn:hover {
+  background-color: rgb(54, 7, 173);
+  color: white;
+  transition: all 300ms ease;
 }
 
 .quality__grid {
@@ -660,18 +689,23 @@ VALUES ↓
 .values__button {
   color: #edf2f7;
   background-color: #6415ff;
-  width: 150px;
+  width: 160px;
   height: 45px;
+  text-decoration: none;
   --tw-bg-opcaity: 1;
   padding: 0.75rem 2rem;
   border-radius: 20px;
   cursor: pointer;
   border: none;
   font-weight: 700;
-  transition-property:
-    background-color, border-color, color, fill, stroke, opcaity, box-shadow,
-    transform;
+  transition-property: all;
   transition-duration: 300ms;
+}
+
+.values__button:hover {
+  background-color: rgb(54, 7, 173);
+  color: white;
+  transition: all 300ms ease;
 }
 
 .values__img {
@@ -822,6 +856,8 @@ PRICING ↓
 
 .threeplans__button--personal {
   width: 100%;
+  max-width: 200px;
+  color: white;
   border-radius: 9999px;
   border-style: hidden;
   cursor: pointer;
@@ -841,8 +877,8 @@ PRICING ↓
   background-color: rgb(56, 178, 172);
   color: white;
   border-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transform: scale(1.05);
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1);
   transition: all 300ms ease;
 }
 
@@ -959,6 +995,7 @@ PRICING ↓
 
 .threeplans__button--business {
   width: 100%;
+  max-width: 200px;
   align-items: center;
   color: rgb(100, 21, 255);
   border-radius: 9999px;
@@ -972,12 +1009,10 @@ PRICING ↓
 }
 
 .threeplans__button--business:hover {
-  background-color: rgb(76, 81, 191);
-  color: white;
   border-color: transparent;
   transition: all 300ms ease;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transform: scale(1.05);
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.);
 }
 
 .threeplans__button--enterprise {
@@ -987,6 +1022,7 @@ PRICING ↓
     rgb(254, 178, 178) 100%
   );
   width: 100%;
+  max-width: 200px;
   align-items: center;
   border-radius: 9999px;
   border-style: hidden;
@@ -1000,8 +1036,7 @@ PRICING ↓
 
 .threeplans__button--enterprise:hover {
   background-color: rgb(229, 62, 62);
-  color: white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: scale(1.05);
   border-color: transparent;
   transition: all 300ms ease;
@@ -1114,7 +1149,7 @@ TESTIMONIALS ↓
 }
 
 .testimonial__button:hover {
-  background-color: #6415ff;
+  background-color: #a19bae;
   color: #edf2f7;
   transition: all 300ms ease;
 }
@@ -1187,11 +1222,13 @@ GET STARTED BANNER ↓
 }
 
 .get__started--btn {
+  width:auto;
   background-color: rgb(245, 101, 101);
   color: rgb(247, 250, 252);
   border-radius: 9999px;
   border-style: hidden;
   border-color: transparent;
+  text-decoration: none;
   margin: 0 8px;
   padding: 0.75rem 2rem;
   font-size: 14px;
@@ -1216,12 +1253,14 @@ GET STARTED BANNER ↓
 }
 
 .contact--btn {
-  background-color: transparent;
+  width: auto;
   color: rgb(247, 250, 252);
+  background-color: transparent;
   border-radius: 9999px;
   border-width: 1px;
-  padding: 0.75rem, 1.5rem;
   border-color: rgb(247, 250, 252);
+  border-style: solid;
+  padding: 0.75rem, 1.5rem;
   margin: 0 8px;
   padding: 0.75rem 2rem;
   font-size: 14px;
@@ -1229,11 +1268,11 @@ GET STARTED BANNER ↓
   cursor: pointer;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.05em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
