@@ -256,7 +256,7 @@ HEADER / ABOUT US ↓
 }
 
 .header__email--input {
-  width: 50%;
+  width: 100%;
   border-radius: 500px;
   margin: 16px 0 0;
   border: 2px solid rgb(229, 231, 235);
@@ -275,6 +275,7 @@ HEADER / ABOUT US ↓
   background-color: #6415ff;
   color: #f7fafc;
   border: none;
+  position: absolute;
   cursor: pointer;
   border-radius: 9999px;
   font-size: 16px;
@@ -1687,6 +1688,7 @@ MOBILE RESPONSIVENESS ↓
   align-items: flex-start;
   margin-top: 32px;
 }
+
 .step__description {
   justify-content: center;
   display: flex;
